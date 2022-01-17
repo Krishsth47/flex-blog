@@ -8,7 +8,10 @@
 }
 
 .card {
-  width: 250px;
+  width: min-max(250px 100%);
+  /*instead of min-max, we can use
+  min-width: 300px;
+  max-width: 100%; */
   min-height: 500px;
   background: white;
   margin: 5px;
@@ -21,6 +24,11 @@ input {
   /* line-height: 30px; */
   padding: 10px;
   border: rgb(10, 114, 19) solid 1px;
+
+  [type="submit"] {
+    background: orangered;
+    color: white;
+  }
 }
 /* ======= wrapper ======== */
 .wrapper {
@@ -201,4 +209,64 @@ footer {
   align-items: center;
   font-size: 12px;
   margin-top: 32px;
+}
+
+.ham,
+.time {
+  display: none;
+}
+
+/* -------- media query -------- */
+
+/* Pseudocode */
+/* min-width or max-width */
+
+/* min-width- how low is limited, how high is not 
+max-width- how high is limited, now low is not */
+/* @media type(screensize)
+p{
+  font-size:20px;
+} */
+@media (max-width: 1080px) {
+  .latest {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .latest section {
+    width: 100%;
+  }
+  .aside {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    padding: 22px 0;
+  }
+  .ham {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .rec-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .post-content img {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .rec-card {
+    display: flex;
+    flex-direction: column;
+  }
 }
