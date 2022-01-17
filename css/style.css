@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  width: 250px;
+  min-height: 500px;
+  background: white;
+  margin: 5px;
+
+  border-radius: 5px;
+  box-shadow: -5px 5px 5px 10px rgba(14, 12, 12, 0.5);
+}
+
+input {
+  /* line-height: 30px; */
+  padding: 10px;
+  border: rgb(10, 114, 19) solid 1px;
+}
+/* ======= wrapper ======== */
+.wrapper {
+  min-height: 100vh;
+}
+/* ======= global message ======== */
+
+.global-message {
+  background: cornflowerblue;
+  padding: 10px 0px;
+}
+
+.global-content {
+  display: flex;
+  justify-content: space-between;
+  /* font-size: 16px; */
+}
+
+.social > i {
+  margin-right: 10px;
+}
+
+/* ======= top nav bar ======== */
+
+.nav-bar {
+  background: rgb(38, 103, 141);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.menu ul {
+  display: flex;
+  /* remove the bullet point  */
+  list-style-type: none;
+}
+
+.menu ul li {
+  margin-right: 20px;
+  /* Change the pointer to hand  */
+  cursor: pointer;
+}
+.menu ul li:hover {
+  color: brown;
+}
+.logo {
+  font-family: "lobster", cursive;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: salmon;
+}
+/* ======== Hero Section ======== */
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  background: url(/assets/hero-img.jpg) no-repeat center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background: black;
+  opacity: 0.7;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* ====== latest post section ====== */
+.latest {
+  display: flex;
+  margin-top: 32px;
+}
+.latest section {
+  width: 66%;
+}
+
+.latest aside {
+  width: 33%;
+  /* background: rgb(124, 147, 216); */
+}
+
+.latest h3 {
+  transform: uppercase;
+  color: salmon;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-content img {
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: -5px 5px 5px 0px rgba(102, 4, 4, 0.5);
+}
+
+.info {
+  margin: 0 20px;
+}
+
+.readMore {
+  background: orangered;
+  font-size: 18px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+}
+.readMore:hover {
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+article {
+  margin-top: 48px;
+}
+
+/* ------- aside ------- */
+aside {
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+aside ul {
+  font-weight: bold;
+  list-style-type: circle;
+}
+.by-date {
+  margin-bottom: 80px;
+}
+
+/* -----recommendation section -------- */
+.rec {
+  background-color: rgba(192, 56, 41, 0.35);
+  padding: 100px 0;
+  margin-top: 32px;
+}
+
+.rec-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* =========subscribe section ========== */
+.subscribe {
+  padding: 50px 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* ======= footer ======= */
+footer {
+  background: black;
+  height: 100px;
+  color: azure;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 32px;
+}
